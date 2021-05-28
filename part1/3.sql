@@ -9,7 +9,7 @@
 select student.id, student.crm_id, student.first_name, student.last_name, student.age, student.gender,
 group.title as group_title, course.title as course_title from (
     select * from student
-    where student.crm_id = '1234568'
+    where student.crm_id = '12345678'
 ) as last_student
 inner join student on last_student.first_name = student.first_name and last_student.last_name = student.last_name
 inner join course on student.course_id = course.id
